@@ -1,0 +1,9 @@
+{
+  "item.stf.lightsaber" : "Luke Lightsaber",
+
+  "itemGroup.stf.starwars" : "Star Wars",
+
+  "tooltip.stf.lightsaber.unactive" : "Unactivated",
+  "tooltip.stf.lightsaber.active" : "Activated"
+
+}

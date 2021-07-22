@@ -1,4 +1,4 @@
 package mod.syconn.stf.init;
 
-public class Items {
+public class FEntity {
 }
