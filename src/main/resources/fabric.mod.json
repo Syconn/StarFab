@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "mod.syconn.stf.Main"
+      "mod.syconn.stf.StarMain"
+    ],
+    "client": [
+      "mod.syconn.stf.StarClient"
     ]
   },
   "mixins": [
