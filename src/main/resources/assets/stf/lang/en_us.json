@@ -1,5 +1,11 @@
 {
   "item.stf.l_saber" : "Lightsaber",
+  "item.stf.l_handles" : "Hilt",
+  "item.stf.kyber_crystal" : "Kyber Crystal",
+  "item.stf.hammer" : "Hammer",
+
+  "block.stf.crystal" : "Kyber Crystal",
+  "block.stf.workstation" : "Lightsaber Workstation",
 
   "itemGroup.stf.starwars" : "Star Wars",
 

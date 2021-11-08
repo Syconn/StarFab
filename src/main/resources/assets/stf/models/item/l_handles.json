@@ -24,87 +24,39 @@
   "overrides": [
     {
       "predicate": {
-        "handle": 0.1,
-        "mode": 0
+        "handle": 0.1
       },
       "model": "stf:item/blue/l_off_blue"
     },
     {
       "predicate": {
-        "handle": 0.1,
-        "mode": 1
-      },
-      "model": "stf:item/blue/l_blue"
-    },
-    {
-      "predicate": {
-        "handle": 0.2,
-        "mode": 0
+        "handle": 0.2
       },
       "model": "stf:item/red/l_off_red"
     },
     {
       "predicate": {
-        "handle": 0.2,
-        "mode": 1
-      },
-      "model": "stf:item/red/l_red"
-    },
-    {
-      "predicate": {
-        "handle": 0.3,
-        "mode": 0
+        "handle": 0.3
       },
       "model": "stf:item/green/l_off_green"
     },
     {
       "predicate": {
-        "handle": 0.3,
-        "mode": 1
-      },
-      "model": "stf:item/green/l_green"
-    },
-    {
-      "predicate": {
-        "handle": 0.4,
-        "mode": 0
+        "handle": 0.4
       },
       "model": "stf:item/white/l_off_white"
     },
     {
       "predicate": {
-        "handle": 0.4,
-        "mode": 1
-      },
-      "model": "stf:item/white/l_white"
-    },
-    {
-      "predicate": {
-        "handle": 0.5,
-        "mode": 0
+        "handle": 0.5
       },
       "model": "stf:item/yellow/l_off_yellow"
     },
     {
       "predicate": {
-        "handle": 0.5,
-        "mode": 1
-      },
-      "model": "stf:item/yellow/l_yellow"
-    },
-    {
-      "predicate": {
-        "handle": 0.6,
-        "mode": 0
+        "handle": 0.6
       },
       "model": "stf:item/purple/l_off_purple"
-    },
-    {
-      "predicate": {
-        "handle": 0.6,
-        "mode": 1
-      },
-      "model": "stf:item/purple/l_purple"
     }
   ]
 }

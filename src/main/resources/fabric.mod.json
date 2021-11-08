@@ -4,13 +4,14 @@
   "version": "${version}",
 
   "name": "StarFab",
-  "description": "I speak english",
+  "description": "A rewrite for Syconn's Star Wars mod ported to fabric",
   "authors": [
     "Syconn"
   ],
   "contact": {
     "homepage": "https://github.com/Syconn/StarFab-master/wiki",
-    "sources": "https://github.com/Syconn/StarFab-master"
+    "sources": "https://github.com/Syconn/StarFab-master",
+    "issues": "https://github.com/Syconn/StarFab/issues"
   },
 
   "license": "CC0-1.0",
@@ -35,7 +36,7 @@
     "minecraft": "1.17.x",
     "java": ">=16"
   },
-  "suggests": {
-    "another-mod": "*"
+  "recommends": {
+    "modmenu": "*"
   }
 }

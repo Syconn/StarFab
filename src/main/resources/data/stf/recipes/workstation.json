@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "WHW",
+    "W W"
+  ],
+  "key": {
+    "W": {
+      "item": "minecraft:iron_ingot"
+    },
+    "H": {
+      "item": "stf:hammer"
+    }
+  },
+  "result": {
+    "item": "stf:workstation",
+    "count": 1
+  }
+}

@@ -1,8 +1,9 @@
-package mod.syconn.stf.item.lightsaber.customize;
+package mod.syconn.stf.items.lightsaber.customize;
 
 import net.minecraft.util.DyeColor;
+import net.minecraft.util.StringIdentifiable;
 
-public enum LColor {
+public enum LColor implements StringIdentifiable {
 
     BLUE(1, "blue"),
     RED(2, "red"),
@@ -45,5 +46,10 @@ public enum LColor {
         }
 
         return BLUE;
+    }
+
+    @Override
+    public String asString() {
+        return this.name;
     }
 }

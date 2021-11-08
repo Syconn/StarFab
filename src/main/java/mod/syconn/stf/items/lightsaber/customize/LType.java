@@ -1,4 +1,4 @@
-package mod.syconn.stf.item.lightsaber.customize;
+package mod.syconn.stf.items.lightsaber.customize;
 
 public enum LType {
 
