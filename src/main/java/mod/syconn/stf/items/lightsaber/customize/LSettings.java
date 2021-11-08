@@ -1,25 +1,23 @@
-package mod.syconn.stf.item.lightsaber.customize;
+package mod.syconn.stf.items.lightsaber.customize;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public class LSettings {
+
     private LType type;
-    private LColor color;
     private int a_damage;
     private float a_speed;
     private boolean activated;
 
-    public LSettings(LType type, LColor color, int a_damage, float a_speed, boolean activated) {
+    private LCrystal crystal;
+
+    public LSettings(LType type, int a_damage, float a_speed, boolean activated, LCrystal crystal) {
         this.type = type;
-        this.color = color;
         this.a_damage = a_damage;
         this.a_speed = a_speed;
         this.activated = activated;
-    }
-
-    public LColor getColor() {
-        return color;
+        this.crystal = crystal;
     }
 
     public LType getType() {
@@ -38,12 +36,16 @@ public class LSettings {
         return activated;
     }
 
-    public void setColor(LColor color) {
-        this.color = color;
+    public boolean hasCrystal(){
+        return crystal != null;
     }
 
-    public void setType(LType type) {
-        this.type = type;
+    public LCrystal getCrystal(){ return crystal; }
+
+    public LColor getColor(){ return crystal.color; }
+
+    public void setColor(LColor color) {
+        this.crystal.color = color;
     }
 
     public void setA_damage(int a_damage) {
@@ -54,15 +56,26 @@ public class LSettings {
         this.a_speed = a_speed;
     }
 
-    public void setActivated(boolean activated) {
-        this.activated = activated;
+    public boolean setActivated(boolean activated) {
+        if (crystal != null) {
+            this.activated = activated;
+            //PLAY SOUND SUCCESS
+            return true;
+        }
+        //PLAY SOUND FAILED
+        return false;
+    }
+
+    public void setCrystal(LCrystal crystal) {
+        this.crystal = crystal;
     }
 
     public enum Modify {
         color,
         a_damage,
         a_speed,
-        activated
+        activated,
+        crystal
     }
 
     public static class Kyber_Material implements ToolMaterial {

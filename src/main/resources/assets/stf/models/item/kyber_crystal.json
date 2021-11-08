@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "stf:items/crushed_gold"
+    "layer0": "stf:items/kyber_crystal"
   }
 }

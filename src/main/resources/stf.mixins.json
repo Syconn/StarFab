@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "mod.syconn.stf.mixin",
+  "package": "mod.syconn.stf.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],

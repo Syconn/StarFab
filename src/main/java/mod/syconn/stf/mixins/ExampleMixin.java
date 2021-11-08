@@ -1,4 +1,4 @@
-package mod.syconn.stf.mixin;
+package mod.syconn.stf.mixins;
 
 import net.minecraft.client.gui.screen.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
