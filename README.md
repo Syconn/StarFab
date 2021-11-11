@@ -1,10 +1,10 @@
 # StarFab - Syconn's Star Wars Mod
 
 ## Setup
-###Requires 
+### Requires 
 
 - Fabric Api
 
-###Recommends
+### Recommends
 
 - ModMenu
