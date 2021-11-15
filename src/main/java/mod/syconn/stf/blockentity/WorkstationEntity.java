@@ -1,16 +1,13 @@
 package mod.syconn.stf.blockentity;
 
-import mod.syconn.stf.client.screens.handler.WorkstationScreenHandler;
+import mod.syconn.stf.client.handler.WorkstationScreenHandler;
 import mod.syconn.stf.init.FBlockEntities;
 import mod.syconn.stf.util.helpers.WorkstationHelper;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.inventory.Inventories;
-import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;

@@ -1,12 +1,13 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "mod.syconn.stf.mixins",
+  "package": "mod.syconn.stf.integraton.mixins",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "NoiseChunkGeneratorMixin",
+    "StructuresConfigAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

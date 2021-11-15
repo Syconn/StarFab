@@ -2,7 +2,8 @@ package mod.syconn.stf.client.screens;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import mod.syconn.stf.StarMain;
-import mod.syconn.stf.client.screens.handler.WorkstationScreenHandler;
+import mod.syconn.stf.client.handler.WorkstationScreenHandler;
+import mod.syconn.stf.client.screens.ui.TabButton;
 import mod.syconn.stf.items.Hilts;
 import mod.syconn.stf.items.KyberCrystal;
 import mod.syconn.stf.items.lightsaber.Lightsaber;
@@ -12,18 +13,24 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class WorkstationScreen extends HandledScreen<ScreenHandler> {
+
     private static final Identifier TEXTURE = new Identifier(StarMain.ID, "textures/gui/container/workstation.png");
     private static final Identifier ICONS = new Identifier(StarMain.ID, "textures/gui/container/icons.png");
+    private final TabButton[] tab = new TabButton[4];
     private final PlayerEntity player;
     private int xSize = 176, ySize = 166;
+    private int xr, yr;
 
     public WorkstationScreen(ScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
         this.player = inventory.player;
+        xr = (width - backgroundWidth) / 2;
+        yr = (height - backgroundHeight) / 2;
     }
 
     @Override
@@ -32,12 +39,10 @@ public class WorkstationScreen extends HandledScreen<ScreenHandler> {
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
 
         RenderSystem.setShaderTexture(0, TEXTURE);
-        int x = (width - backgroundWidth) / 2;
-        int y = (height - backgroundHeight) / 2;
         drawTexture(matrices, x, y, 0, 0, backgroundWidth, backgroundHeight);
 
-        x = (x + (backgroundWidth / 2)) - 9;
-        y = (y + (backgroundWidth / 2)) - 54;
+        int x = (xr + (backgroundWidth / 2)) - 9;
+        int y = (yr + (backgroundWidth / 2)) - 54;
 
         if (handler instanceof WorkstationScreenHandler) {
             WorkstationScreenHandler handler = (WorkstationScreenHandler) this.handler;
@@ -70,6 +75,11 @@ public class WorkstationScreen extends HandledScreen<ScreenHandler> {
     protected void init() {
         super.init();
         titleX = (backgroundWidth - textRenderer.getWidth(title)) / 2;
+        int x = (width - backgroundWidth) / 2;
+        int y = (height - backgroundHeight) / 2;
+        this.addDrawableChild(tab[0] = new TabButton(x, y, new LiteralText("F"), button -> {
+            System.out.println("HERE");
+        }));
     }
 
     @Override

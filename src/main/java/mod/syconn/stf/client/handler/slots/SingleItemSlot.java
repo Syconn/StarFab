@@ -1,4 +1,4 @@
-package mod.syconn.stf.client.screens.slots;
+package mod.syconn.stf.client.handler.slots;
 
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.Item;

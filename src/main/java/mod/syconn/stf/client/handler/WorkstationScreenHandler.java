@@ -1,9 +1,8 @@
-package mod.syconn.stf.client.screens.handler;
+package mod.syconn.stf.client.handler;
 
-import mod.syconn.stf.client.screens.slots.SingleItemSlot;
+import mod.syconn.stf.client.handler.slots.SingleItemSlot;
 import mod.syconn.stf.init.FItems;
 import mod.syconn.stf.init.FScreens;
-import net.minecraft.client.gui.screen.ingame.ShulkerBoxScreen;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -29,8 +28,8 @@ public class WorkstationScreenHandler extends ScreenHandler {
         player = playerInventory.player;
 
         this.addSlot(new SingleItemSlot(inventory, 0, 27, 35, FItems.HILTS));
-        this.addSlot(new SingleItemSlot(inventory, 1, 80, 35, FItems.LIGHTSABER));
-        this.addSlot(new SingleItemSlot(inventory, 2, 133, 35, FItems.KYBER));
+        this.addSlot(new SingleItemSlot(inventory, 2, 80, 35, FItems.KYBER));
+        this.addSlot(new SingleItemSlot(inventory, 1, 133, 35, FItems.LIGHTSABER));
 
         //The player inventory
         for (int m = 0; m < 3; ++m) {
