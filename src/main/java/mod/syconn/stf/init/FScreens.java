@@ -2,7 +2,7 @@ package mod.syconn.stf.init;
 
 import mod.syconn.stf.StarMain;
 import mod.syconn.stf.client.screens.WorkstationScreen;
-import mod.syconn.stf.client.screens.handler.WorkstationScreenHandler;
+import mod.syconn.stf.client.handler.WorkstationScreenHandler;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.screen.ScreenHandlerType;
